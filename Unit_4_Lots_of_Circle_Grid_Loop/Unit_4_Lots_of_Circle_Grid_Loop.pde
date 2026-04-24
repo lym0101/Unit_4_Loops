@@ -7,27 +7,14 @@ color medium = #97abb3;
 color dark = #647e83;
 
 float radius;
-int counter;
 
 void setup() {
   pixelDensity(1);
   size(800,800);
   background(255);
-  counter = 1;
   for (int a = 40; a <= 825; a += 80) {
     for (int b = 40; b <= 825; b += 80) {
-      if (counter == 1) {
-        fill(dark);
-      } else if (counter == 2) {
-        fill(medium);
-      } else if (counter == 3) {
-        fill(light);
-      }
       drawRings(b,a,80);
-      counter++;
-      if (counter > 3) {
-        counter = 1;
-      }
     }
   }
 }
