@@ -28,11 +28,3 @@ void drawRings(int x, int y, int r) {
   circle(x,y,r - spacing*2);
   circle(x, y, r - spacing*3);
 }
-  
-  
-  
-  
-  
-  
-  
-  
